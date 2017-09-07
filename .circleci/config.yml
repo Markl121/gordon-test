@@ -32,6 +32,8 @@ jobs:
             echo "first artifact" > /tmp/my_artifacts/first
             echo "second artifact" > /tmp/my_artifacts/second
 
+      - run: sleep 180
+
       - store_artifacts:
           path: /tmp/my_artifacts
           destination: text-data
