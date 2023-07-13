@@ -66,3 +66,5 @@ workflows:
               only: /m.ster/
           requires:
             - build
+          context:
+            - a-context
